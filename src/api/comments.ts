@@ -1,7 +1,6 @@
 import axios from 'axios';
 import api from './endPoint';
 
-
 export async function getCommentsByPost(slug: string, userToken: string) {
   const url = `${api.baseApi}/api/comments/post/${slug}`;
   try {
